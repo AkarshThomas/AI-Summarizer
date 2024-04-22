@@ -6,11 +6,11 @@ const Hero = () => {
     <>
     
     <header className='w-full flex justify-center items-center flex-col'>
-     <nav className='mt-5 flex justify-between items-center w-full mb-12 pt-3'>
+     <nav className='mt-4 flex flex-col md:flex-row justify-between items-center w-full mb-12 pt-3'>
      <p className="flex items-center">
      <img src={favicon} alt='IntelliBrief_logo' 
-     className=' w-20 object-contain border-black'/>
-        <h1 className="mb-2 text-4xl font-extrabold  text-indigo-500 ;">IntelliBrief</h1>
+     className=' w-16 object-contain rounded-full'/>
+        <h1 className="mb-2 p-2 text-4xl font-extrabold  text-indigo-500 ;">IntelliBrief</h1>
      </p>
 
         <button
@@ -18,7 +18,7 @@ const Hero = () => {
           onClick={() =>
             window.open("https://github.com/AkarshThomas", "_blank")
           }
-          className='black_btn mb-2'
+          className='black_btn mb-2 md:mb-0'
         >
           GitHub
         </button>

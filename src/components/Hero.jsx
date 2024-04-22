@@ -10,7 +10,7 @@ const Hero = () => {
      <p className="flex items-center">
      <img src={favicon} alt='IntelliBrief_logo' 
      className=' w-16 object-contain rounded-full'/>
-        <h1 className="mb-2 p-2 text-4xl font-extrabold  text-indigo-500 ;">IntelliBrief</h1>
+        <h1 className="mt-1 mb-2 p-2 text-4xl font-extrabold  text-indigo-500 ;">IntelliBrief</h1>
      </p>
 
         <button

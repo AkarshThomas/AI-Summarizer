@@ -98,7 +98,9 @@ const Demo = () => {
               onClick={() => setArticle(item)}
               className='link_card'
             >
-              <div className='copy_btn' onClick={() => handleCopy(item.url)}>
+              <div className='copy_btn' onClick={(e) => {
+                 e.stopPropagation(); 
+                  handleCopy(item.url)}}>
                 <img
                   src={copied === item.url ? tick : copy}
                   alt={copied === item.url ? "tick_icon" : "copy_icon"}
